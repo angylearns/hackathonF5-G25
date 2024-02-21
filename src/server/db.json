@@ -1,0 +1,22 @@
+{
+    "products": [
+        {
+            "name": "Tablet 10",
+            "category": "tablets",
+            "price": "100",
+            "location": "Madrid",
+            "image": "url",
+            "details": "Detalles de la Tableta",
+            "seller": "Paco",            
+            "id": "1"
+            
+        }
+    ],
+    "seller": [
+        {
+            "id": "1",
+            "name": "Paco",
+            "phone": "123456789"
+        }
+    ]
+}
