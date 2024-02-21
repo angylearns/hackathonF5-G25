@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Post>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
  */
-class PostFactory extends Factory
+class CategoriesFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,9 +17,7 @@ class PostFactory extends Factory
     public function definition(): array
     {
         return [
-            'titulo'=>$this -> faker -> sentence(),
-            'contenido'=>$this -> faker -> text(30),
-            'id_user'=>1,
+            'category_id'=> \App\Models\Category::pluck('id')->random(),
         ];
     }
 }
