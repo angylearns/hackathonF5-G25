@@ -4,9 +4,9 @@ import { Outlet } from 'react-router-dom'
 const Layout = () => {
   return (
     <>
-    <nav></nav>
+    <nav>Soy un nav</nav>
     <Outlet/>
-    <footer></footer>
+    <footer>Soy un footer</footer>
     </>
   )
 }
