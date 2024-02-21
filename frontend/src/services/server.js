@@ -1,34 +1,30 @@
-const url = 'http://localhost:3000/products'
+const url = 'http://localhost:3000'
 
-// Petición GET
+// PRODUCTS
 
-export const getP = async () => {
-    const response = await fetch(url);
+export const getProducts = async () => {
+    const response = await fetch(`${url}/products`);
     const data = await response.json();
     return data;
 }
 
-export const getById = async (id) => {
-    const response = await fetch(`${url}/${id}`);
+export const getProductById = async (id) => {
+    const response = await fetch(`${url}/products/${id}`);
     const data = await response.json();
     return data;
 }
 
-// Petición DELETE
-
-export const deleteP = async (id) => {
+export const deleteProduct = async (id) => {
     if (confirm("¿Estás seguro que quieres eliminar?") === true) {
-        const response = await fetch(`${url}/${id}`, { method: "DELETE" });
+        const response = await fetch(`${url}/products/${id}`, { method: "DELETE" });
         const data = await response.json();
         return data;
     } else
         return 0;
 }
 
-// Petición POST
-
-export const createP = async (newProduct) => {
-    const response = await fetch(`${url}`, {
+export const createProduct = async (newProduct) => {
+    const response = await fetch(`${url}/products`, {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify(newProduct)
@@ -39,12 +35,26 @@ export const createP = async (newProduct) => {
 
 // Petición PUT
 
-export const updateP = async (id, modified) => {
-    const response = await fetch(`${url}/${id}`, {
+export const updateProduct = async (id, modified) => {
+    const response = await fetch(`${url}/products/${id}`, {
         method: "PUT",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify(modified)
     });
+    const data = await response.json();
+    return data;
+}
+
+// USERS
+
+export const getUsers = async () => {
+    const response = await fetch(`${url}/users`);
+    const data = await response.json();
+    return data;
+}
+
+export const getUserById = async (id) => {
+    const response = await fetch(`${url}/users/${id}`);
     const data = await response.json();
     return data;
 }
