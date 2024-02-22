@@ -37,7 +37,7 @@ function Header(props) {
                     className=" mr-sm-2"
                   />
                   <Button variant="outline-primary" id="button-addon1">
-                    <i class="bi bi-search"></i>
+                    <i className="bi bi-search"></i>
                   </Button>
                 </InputGroup>
               </Col>
