@@ -7,7 +7,10 @@ const Home = () => {
   const products = useLoaderData();
   return (
     <>
-    <h1>TechRevive</h1>
+    <div className='slogan-home'>
+      <h1>TechRevive</h1>
+      <p>"Revive la tecnología, renueva el planeta: TechRevive, donde el futuro se construye sobre la innovación sostenible."</p>
+    </div>
       <Catalog products={products}/>
     </>
   );
