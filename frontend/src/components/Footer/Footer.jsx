@@ -18,10 +18,10 @@ function Footer() {
                 width="80px"
               />
               <div className="my-4">
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-twitter"></i>
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-twitch"></i>
+                <i className="bi bi-facebook"></i>
+                <i className="bi bi-twitter"></i>
+                <i className="bi bi-instagram"></i>
+                <i className="bi bi-twitch"></i>
               </div>
               <hr className="p-0 m-0" />
               <div className="mt-4">
