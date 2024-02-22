@@ -7,9 +7,9 @@ const Admin = () => {
     const navigate = useNavigate();
 
     return (
-        <form onSubmit={handleSubmit(data => navigate(`/admin/${data.id}`))}>
-            <input {...register("id")} placeholder="Número de usuario"></input>
-            <button type="submit">Mostrar mis productos</button>
+        <form   onSubmit={handleSubmit(data => navigate(`/admin/${data.id}`))}>
+            <input style={{width: "50%", marginTop:"100px"}} {...register("id")} placeholder="Número de usuario"></input>
+            <button style={{width: "50%", borderRadius:"10px", marginBottom:"100px"}} type="submit">Mostrar mis productos</button>
         </form>
     );
 }

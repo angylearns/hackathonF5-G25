@@ -23,35 +23,35 @@ function Form({ method }) {
     };
 
     return (
-            <form onSubmit={handleSubmit(data => { method === "post" ? createProduct(data).then(()=>navigate(`/admin/${userid}`)) : updateProduct(id, data).then(()=>navigate(`/admin/${userid}`))})}>
-                <label htmlFor="name">Nombre:
-                    <input required type="text" name="name" id="name" {...register("name")} />
+            <form className="form-admin" onSubmit={handleSubmit(data => { method === "post" ? createProduct(data).then(()=>navigate(`/admin/${userid}`)) : updateProduct(id, data).then(()=>navigate(`/admin/${userid}`))})}>
+                <label className="label-form" htmlFor="name">Nombre:
+                    <input className="input-form" required type="text" name="name" id="name" {...register("name")} />
                 </label>
-                <label htmlFor="category">
+                <label className="label-form" htmlFor="category">
                     Categoría:
-                    <input required type="number" name="category_id" id="category" {...register("category_id")} />
+                    <input className="input-form" required type="number" name="category_id" id="category" {...register("category_id")} />
                 </label>
-                <label htmlFor="price">
+                <label className="label-form" htmlFor="price">
                     Precio:
-                    <input required type="number" step="any" name="price" id="price" {...register("price")} />
+                    <input className="input-form" required type="number" step="any" name="price" id="price" {...register("price")} />
                 </label>
-                <label htmlFor="seller">
+                <label className="label-form" htmlFor="seller">
                     Vendedor:
-                    <input required type="number" name="seller_id" id="seller" {...register("seller_id")} />
+                    <input className="input-form" required type="number" name="seller_id" id="seller" {...register("seller_id")} />
                 </label>
-                <label htmlFor="location">
+                <label className="label-form" htmlFor="location">
                     Localización:
-                    <input required type="number" name="location_id" id="location" {...register("location_id")} />
+                    <input className="input-form" required type="number" name="location_id" id="location" {...register("location_id")} />
                 </label>
-                <label htmlFor="image">
+                <label className="label-form" htmlFor="image">
                     Imagen:
-                    <input required type="text" name="image" id="image" {...register("image")} />
+                    <input className="input-form" required type="text" name="image" id="image" {...register("image")} />
                 </label>
-                <label htmlFor="description">
+                <label className="label-form" htmlFor="description">
                     Descripción:
-                    <input type="text" name="description" id="description" {...register("description")} />
+                    <input className="input-form" type="text" name="description" id="description" {...register("description")} />
                 </label>
-                <div>
+                <div className="buttons-form">
                     <button type="submit">Guardar</button>
                     <Link to={`/admin/${userid}`} ><button>Cancelar</button></Link>
                 </div>

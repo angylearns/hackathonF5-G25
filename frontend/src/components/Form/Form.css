@@ -1,6 +1,23 @@
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
+    gap: 20px;
+    /* align-items: flex-start; */
+    align-items: left;
+    margin-left: 50px;
+}
+.buttons-form{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.buttons-form button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #EAF4F6;
+} 
+.input-form{
+    border-radius: 5px;
+    display: flex;
 }
