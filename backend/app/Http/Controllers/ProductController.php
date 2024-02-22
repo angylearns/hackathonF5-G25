@@ -23,38 +23,34 @@ class ProductController extends Controller
         $product -> price = $request -> category_id;
         $product -> seller_id =  $request -> seller_id;
         $product -> location_id = $request -> location_id;
-        $product -> img = $request -> image;
+        $product -> image = $request -> image;
         $product -> description = $request -> description;
         $product ->save();
     }
 
 
-      public function show($id){
-          $product = Product::find($id);
+    public function show($id){
+           $product = Product::find($id);
           return $product;
-      }
+   }
       
-      public function update(Request $request, $id){
-        $product = Product::findOrFail($request->$id);
-        $product -> li_titulo = $request -> li_nombre;
-        $product -> li_autor = $request ->li_autor;
-        $product -> li_genero = $request ->li_genero;
-        $product -> li_precio = $request -> li_precio;
-
-        $product ->save();
+     public function update(Request $request, $id){
+        $product = Product::findOrFail($id);
+        $product -> name = $request -> name;
+        $product -> category_id = $request -> category_id;
+        $product -> price = $request -> category_id;
+        $product -> seller_id =  $request -> seller_id;
+        $product -> location_id = $request -> location_id;
+        $product -> image = $request -> image;
+        $product -> description = $request -> description;
+        $product ->save(); 
         return $product;
     }
 
     public function destroy (Request $request,$id){
-        $product = product::findOrFail($id);
-        $product -> li_titulo = $request -> li_nombre;
-        $product -> li_autor = $request ->li_autor;
-        $product -> li_genero = $request ->li_genero;
-        $product -> li_precio = $request -> li_precio;
-
-        $product ->save();
-        $product = Product::destroy ($id);
-        return $product;
+        $product = Product::findOrFail($id);
+        $product->delete();
+        return response()->json(['message' => 'Producto eliminado correctamente'], 200);
     }
 
 
