@@ -2,6 +2,12 @@ const url = 'http://localhost:3000'
 
 // PRODUCTS
 
+export const getUser = async (id) => {
+    const response = await fetch(`${url}/users/${id}`);
+    const data = await response.json();
+    return data;
+}
+
 export const getProducts = async () => {
     const response = await fetch(`${url}/products`);
     const data = await response.json();
