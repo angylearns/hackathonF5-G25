@@ -4,54 +4,57 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Libro;
-use App\Models\Cliente;
-use App\Models\Venta;
+use App\Models\Product;
+use App\Models\User;
+use App\Models\Category;
+use App\Models\Location;
 
 class ProductController extends Controller
 {
     public function index(){
-        $libros= Libro::all();
-        return $libros;
+        $products= Product::all();
+        return $products;
     }
 
     public function store(Request $request){
-        $libro = new Libro;
-        $libro -> li_nombre = $request -> li_nombre;
-        $libro -> li_autor = $request ->li_autor;
-        $libro -> li_genero = $request ->li_genero;
-        $libro -> li_precio = $request -> li_precio;
-
-        $libro ->save();
+        $product = new Product;
+        $product ->  name = $request -> name;
+        $product -> category_id = $request -> category_id;
+        $product -> price = $request -> category_id;
+        $product -> seller_id =  $request -> seller_id;
+        $product -> location_id = $request -> location_id;
+        $product -> img = $request -> image;
+        $product -> description = $request -> description;
+        $product ->save();
     }
 
 
       public function show($id){
-          $libro = Libro::find($id);
-          return $libro;
+          $product = Product::find($id);
+          return $product;
       }
       
       public function update(Request $request, $id){
-        $libro = Libro::findOrFail($request->$id);
-        $libro -> li_titulo = $request -> li_nombre;
-        $libro -> li_autor = $request ->li_autor;
-        $libro -> li_genero = $request ->li_genero;
-        $libro -> li_precio = $request -> li_precio;
+        $product = Product::findOrFail($request->$id);
+        $product -> li_titulo = $request -> li_nombre;
+        $product -> li_autor = $request ->li_autor;
+        $product -> li_genero = $request ->li_genero;
+        $product -> li_precio = $request -> li_precio;
 
-        $libro ->save();
-        return $libro;
+        $product ->save();
+        return $product;
     }
 
     public function destroy (Request $request,$id){
-        $libro = Libro::findOrFail($id);
-        $libro -> li_titulo = $request -> li_nombre;
-        $libro -> li_autor = $request ->li_autor;
-        $libro -> li_genero = $request ->li_genero;
-        $libro -> li_precio = $request -> li_precio;
+        $product = product::findOrFail($id);
+        $product -> li_titulo = $request -> li_nombre;
+        $product -> li_autor = $request ->li_autor;
+        $product -> li_genero = $request ->li_genero;
+        $product -> li_precio = $request -> li_precio;
 
-        $libro ->save();
-        $libro = Libro::destroy ($id);
-        return $libro;
+        $product ->save();
+        $product = Product::destroy ($id);
+        return $product;
     }
 
 
