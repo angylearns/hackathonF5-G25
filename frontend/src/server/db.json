@@ -1,22 +1,144 @@
 {
     "products": [
         {
-            "name": "Tablet 10",
-            "category": "tablets",
+            "id": "1",
+            "name": "Iphone 15 rosa",
+            "category_id": 2,
+            "price": "100 $",
+            "seller_id": 1,
+            "location_id": 4,
+            "image": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202309/20/00194612201072____12__640x640.jpg",
+            "description":"El iPhone 15, la última joya tecnológica de Apple, promete revolucionar el mundo de los smartphones con su innovación y potencia. Equipado con una cámara de vanguardia que redefine los límites de la fotografía móvil, el iPhone 15 cautiva con su sistema de triple lente, ofreciendo imágenes nítidas y vibrantes en cualquier situación. Su pantalla OLED de alta resolución deslumbra con colores vívidos y un contraste impresionante, proporcionando una experiencia visual inigualable para disfrutar de contenido multimedia. Además, su procesador A15 Bionic, combinado con una capacidad de almacenamiento ampliada, asegura un rendimiento excepcional y una fluidez sin igual en cada tarea. Con características innovadoras como la tecnología de carga rápida y una mayor resistencia al agua y al polvo, el iPhone 15 se presenta como el compañero perfecto para aquellos que buscan lo último en tecnología móvil.",
+            "created_at": "2022-02-02 12:12:12",
+            "updated_at": "2022-02-02 12:12:12"            
+        },
+        {
+            "id": "2",
+            "name": "iPad Pro 12.9 (2015) Gris",
+            "category_id": 2,
             "price": "100",
-            "location": "Madrid",
-            "image": "url",
-            "details": "Detalles de la Tableta",
-            "seller": "Paco",            
-            "id": "1"
-            
+            "seller_id": 1,
+            "location_id": 4,
+            "image": "https://www.backmarket.es/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D640/https://d2e6ccujb3mkqf.cloudfront.net/16b51eee-04dd-4fa2-b241-d4e20b77d796-1_5861872a-e045-46ae-96ce-6ce89f6ead77.jpg",
+            "description": "El iPad Pro 12.9 de primera generación, con capacidad de almacenamiento de 128 GB y conectividad WiFi + 4G, en elegante gris espacial, marca un hito en la evolución de las tabletas. Con su pantalla Retina de 12.9 pulgadas, ofrece una experiencia visual inigualable, ideal para la creatividad y la productividad. Potenciado por un rendimiento excepcional gracias a su chip A9X, este dispositivo es perfecto para multitareas exigentes y aplicaciones de alta demanda. Además, su diseño delgado y ligero, combinado con su conectividad 4G, lo convierten en el compañero ideal tanto en casa como en movimiento.",
+            "created_at": "2022-02-02 12:12:12",
+            "updated_at": "2022-02-02 12:12:12"            
+        },
+        {
+            "id": "3",
+            "name": "Tablet 13",
+            "category_id": 2,
+            "price": "100",
+            "seller_id": 1,
+            "location_id": 4,
+            "image": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202309/20/00194612201072____12__640x640.jpg",
+            "description": "Detalles de la Tableta",
+            "created_at": "2022-02-02 12:12:12",
+            "updated_at": "2022-02-02 12:12:12"            
+        }
+        ,
+        {
+            "id": "4",
+            "name": "Tablet 14",
+            "category_id": 2,
+            "price": "100",
+            "seller_id": 1,
+            "location_id": 4,
+            "image": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202309/20/00194612201072____12__640x640.jpg",
+            "description": "Detalles de la Tableta",
+            "created_at": "2022-02-02 12:12:12",
+            "updated_at": "2022-02-02 12:12:12"            
+        },
+        {
+            "id": "5",
+            "name": "Tablet 15",
+            "category_id": 2,
+            "price": "100",
+            "seller_id": 1,
+            "location_id": 4,
+            "image": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202309/20/00194612201072____12__640x640.jpg",
+            "description": "Detalles de la Tableta",
+            "created_at": "2022-02-02 12:12:12",
+            "updated_at": "2022-02-02 12:12:12"            
         }
     ],
-    "seller": [
+    "users": [
         {
             "id": "1",
-            "name": "Paco",
-            "phone": "123456789"
+            "username": "seh_paco_guapo",
+            "seller": 1,
+            "email": "paco@paco.com",
+            "password": "1234",
+            "address": "Calle Mía, 22",
+            "location_id": 3,
+            "first_name": "Francisco",
+            "last_name": "González",
+            "zip_code": "28001",
+            "mobile": "123456789",
+            "created_at": "2022-02-02 12:12:12",
+            "updated_at": "2022-02-02 12:12:12"
+           
         }
+    ],
+    
+    "locations":[
+        {
+        "id": "1", 
+        "location": "Alava"
+        },
+        {
+            "id": "2", 
+            "location": "Albacete"
+        },
+        {"id": "3", "location": "Alicante"},
+        {"id": "4", "location": "Almeria"},
+        {"id": "5", "location": "Asturias"},
+        {"id": "6", "location": "Avila"},
+        {"id": "7", "location": "Badajoz"},
+        {"id": "8", "location": "Barcelona"},
+        {"id": "9", "location": "Burgos"},
+        {"id": "10", "location": "Caceres"},
+        {"id": "11", "location": "Cadiz"},
+        {"id": "12", "location": "Cantabria"},
+        {"id": "13", "location": "Castellon"},
+        {"id": "14", "location": "Ciudad Real"},
+        {"id": "15", "location": "Cordoba"},
+        {"id": "16", "location": "Cuenca"},
+        {"id": "17", "location": "Gerona (Girona)"},
+        {"id": "18", "location": "Granada"},
+        {"id": "19", "location": "Guadalajara"},
+        {"id": "20", "location": "Guipuzcoa (Gipuzkoa)"},
+        {"id": "21", "location": "Huelva"},
+        {"id": "22", "location": "Huesca"},
+        {"id": "23", "location": "Islas Baleares (Illes Balears)"},
+        {"id": "24", "location": "Jaen"},
+        {"id": "25", "location": "La Coruna (A Coruna)"},
+        {"id": "26", "location": "La Rioja"},
+        {"id": "27", "location": "Las Palmas"},
+        {"id": "28", "location": "Leon"},
+        {"id": "29", "location": "Lerida (Lleida)"},
+        {"id": "30", "location": "Lugo"},
+        {"id": "31", "location": "Madrid"},
+        {"id": "32", "location": "Malaga"},
+        {"id": "33", "location": "Murcia"},
+        {"id": "34", "location": "Navarra"},
+        {"id": "35", "location": "Orense (Ourense)"},
+        {"id": "36", "location": "Palencia"},
+        {"id": "37", "location": "Pontevedra"},
+        {"id": "38", "location": "Salamanca"},
+        {"id": "39", "location": "Santa Cruz de Tenerife"},
+        {"id": "40", "location": "Segovia"},
+        {"id": "41", "location": "Sevilla"},
+        {"id": "42", "location": "Soria"},
+        {"id": "43", "location": "Tarragona"},
+        {"id": "44", "location": "Teruel"},
+        {"id": "45", "location": "Toledo"},
+        {"id": "46", "location": "Valencia"},
+        {"id": "47", "location": "Valladolid"},
+        {"id": "48", "location": "Vizcaya (Bizkaia)"},
+        {"id": "49", "location": "Zamora"},
+        {"id": "50", "location": "Zaragoza"}
     ]
+        
+    
 }
