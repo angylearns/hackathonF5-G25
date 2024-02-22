@@ -2,6 +2,10 @@
   justify-content: center;
 }
 
+.logo-techrevive{
+  height: 60px;
+  width: auto;
+}
 
 
 .navbar .nav-item a {
@@ -13,13 +17,20 @@
   font-size: 1.8rem;
 }
 
-.primary{
-  --bs-primary;
+.bi-person-circle{
+  font-size: 30px;
+  color: #0D6EFD;
 }
 
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  .navbar {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 776px) {
   .navbar {
     justify-content: space-between;
   }
