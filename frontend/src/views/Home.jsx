@@ -11,8 +11,7 @@ const Home = () => {
       <Catalog products={products}/>
     </section>
     </>
-    
-  )
+  );
 }
 
-export default Home
+export default Home;
