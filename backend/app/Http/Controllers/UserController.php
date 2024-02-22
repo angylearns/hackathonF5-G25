@@ -55,15 +55,38 @@ class UserController extends Controller
         return $user;
     }
 
-    public function destroy ($id){
+    public function destroy($id){
         try {
             $user = User::findOrFail($id);
-            $user->delete();
-            
-            return response()->json(['message' => 'The user has been successfully deleted'], Response::HTTP_OK);
-        } catch (\Exception $e) {
-            return response()->json(['message' => 'An error occurred while deleting the user'], Response::HTTP_INTERNAL_SERVER_ERROR);
+             $firstName = $user->first_name;
+             $lastName = $user->last_name;
+             $user->update([
+                    'username' => 'deleted',
+                    'seller' => 0,
+                    'email' => 'deleted',
+                    'password' => 'deleted', 
+                    'address' => 'deleted',
+                    'location_id' => 1, 
+                    'zip_code' => 'deleted',
+                    'mobile' => 'deleted',
+                    'updated_at'=> now(),
+                   
+                ]);
+        
+                return response()->json(['message' => 'Sensitive user data has been deleted', 'first_name' => $firstName, 'last_name' => $lastName], Response::HTTP_OK);
+            } catch (\Exception $e) {
+                return response()->json(['message' => 'An error occurred while deleting sensitive user data'], Response::HTTP_INTERNAL_SERVER_ERROR);
+            }
         }
-    }
+
+    // try {
+    //     $user = User::findOrFail($id);
+    //     $user->delete();
+        
+    //     return response()->json(['message' => 'The user has been successfully deleted'], Response::HTTP_OK);
+    // } catch (\Exception $e) {
+    //     return response()->json(['message' => 'An error occurred while deleting the user'], Response::HTTP_INTERNAL_SERVER_ERROR);
+    // }
+    
         
     }
