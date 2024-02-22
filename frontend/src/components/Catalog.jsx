@@ -3,11 +3,11 @@ import "./Catalog.css";
 
 const Catalog = ({ products }) => {
     return (
-        <article>
+        <section>
         {products.map(product => (
             <Card key={product.id} product={product} />
         ))}
-        </article>
+        </section>
     )
 
 }
