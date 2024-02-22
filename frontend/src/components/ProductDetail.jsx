@@ -8,6 +8,7 @@ const ProductDetail = () => {
   const {id} = useParams();
   const [product, setProduct] = useState(null);
   const [seller, setSeller] = useState();
+  const [locations, setLocations] = useState([]);
 
   useEffect(() => {
     const productId = async () => {
@@ -36,7 +37,7 @@ const ProductDetail = () => {
         
             <div  className="product-info-text">
               <h3 className='product-tittle'>{product.name}</h3>
-                <p>{product.location_id}</p>
+                <p>{location.id}</p>
                 <p>{product.description}</p>
                 <p>Price: {product.price}</p>
                 <div>

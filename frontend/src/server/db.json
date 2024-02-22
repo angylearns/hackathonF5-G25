@@ -79,5 +79,66 @@
             "updated_at": "2022-02-02 12:12:12"
            
         }
+    ],
+    
+    "locations":[
+        {
+        "id": "1", 
+        "location": "Alava"
+        },
+        {
+            "id": "2", 
+            "location": "Albacete"
+        },
+        {"id": "3", "location": "Alicante"},
+        {"id": "4", "location": "Almeria"},
+        {"id": "5", "location": "Asturias"},
+        {"id": "6", "location": "Avila"},
+        {"id": "7", "location": "Badajoz"},
+        {"id": "8", "location": "Barcelona"},
+        {"id": "9", "location": "Burgos"},
+        {"id": "10", "location": "Caceres"},
+        {"id": "11", "location": "Cadiz"},
+        {"id": "12", "location": "Cantabria"},
+        {"id": "13", "location": "Castellon"},
+        {"id": "14", "location": "Ciudad Real"},
+        {"id": "15", "location": "Cordoba"},
+        {"id": "16", "location": "Cuenca"},
+        {"id": "17", "location": "Gerona (Girona)"},
+        {"id": "18", "location": "Granada"},
+        {"id": "19", "location": "Guadalajara"},
+        {"id": "20", "location": "Guipuzcoa (Gipuzkoa)"},
+        {"id": "21", "location": "Huelva"},
+        {"id": "22", "location": "Huesca"},
+        {"id": "23", "location": "Islas Baleares (Illes Balears)"},
+        {"id": "24", "location": "Jaen"},
+        {"id": "25", "location": "La Coruna (A Coruna)"},
+        {"id": "26", "location": "La Rioja"},
+        {"id": "27", "location": "Las Palmas"},
+        {"id": "28", "location": "Leon"},
+        {"id": "29", "location": "Lerida (Lleida)"},
+        {"id": "30", "location": "Lugo"},
+        {"id": "31", "location": "Madrid"},
+        {"id": "32", "location": "Malaga"},
+        {"id": "33", "location": "Murcia"},
+        {"id": "34", "location": "Navarra"},
+        {"id": "35", "location": "Orense (Ourense)"},
+        {"id": "36", "location": "Palencia"},
+        {"id": "37", "location": "Pontevedra"},
+        {"id": "38", "location": "Salamanca"},
+        {"id": "39", "location": "Santa Cruz de Tenerife"},
+        {"id": "40", "location": "Segovia"},
+        {"id": "41", "location": "Sevilla"},
+        {"id": "42", "location": "Soria"},
+        {"id": "43", "location": "Tarragona"},
+        {"id": "44", "location": "Teruel"},
+        {"id": "45", "location": "Toledo"},
+        {"id": "46", "location": "Valencia"},
+        {"id": "47", "location": "Valladolid"},
+        {"id": "48", "location": "Vizcaya (Bizkaia)"},
+        {"id": "49", "location": "Zamora"},
+        {"id": "50", "location": "Zaragoza"}
     ]
+        
+    
 }
