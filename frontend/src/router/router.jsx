@@ -3,9 +3,9 @@ import Home from "../views/Home";
 import Layout from "../components/Layout";
 import { getProducts, getProductById } from '../services/services'
 import ProductDetail from "../components/ProductDetail";
-import Catalog from "../components/Catalog";
 import Form from "../components/Form/Form";
 import Admin from "../views/Admin";
+import SellerList from "../components/SellerList/SellerList";
 
 const router = createBrowserRouter([
   {
@@ -37,20 +37,20 @@ const router = createBrowserRouter([
           },
           {
             path: "/admin/:userid",
-            element: <Admin />,
+            element: <SellerList />,
             loader: getProducts,
           },
           {
-            path: "/admin/product/:id",
+            path: "/admin/:userid/product/:id",
             element: <ProductDetail />,
             loader: getProductById
           },
           {
-            path: "/admin/add/product/",
+            path: "/admin/:userid/add/product/",
             element: <Form method="post" />
           },
           {
-            path: "/admin/edit/product/:id",
+            path: "/admin/:userid/edit/product/:id",
             element: <Form method="put" />
           }
         ]

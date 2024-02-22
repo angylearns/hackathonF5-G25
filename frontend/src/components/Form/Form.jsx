@@ -1,17 +1,13 @@
-import { Link, Navigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useForm } from 'react-hook-form';
 import { createProduct, getProductById, updateProduct } from "../../services/services";
 import "./Form.css"
-import { useState } from "react";
 
 function Form({ method }) {
     const { register, handleSubmit, setValue } = useForm();
     const id = useParams().id;
-    const [goToHome, setGoToHome] = useState(false);
-
-    if (goToHome) {
-      return <Navigate to="/" />
-    }
+    const userid = useParams().userid;
+    const navigate = useNavigate();
   
     if (method === "put") {
     
@@ -27,7 +23,7 @@ function Form({ method }) {
     };
 
     return (
-            <form onSubmit={handleSubmit(data => { method === "post" ? createProduct(data).then(()=>setGoToHome(true)) : updateProduct(id, data).then(()=>setGoToHome(true))})}>
+            <form onSubmit={handleSubmit(data => { method === "post" ? createProduct(data).then(()=>navigate(`/admin/${userid}`)) : updateProduct(id, data).then(()=>navigate(`/admin/${userid}`))})}>
                 <label htmlFor="name">Nombre:
                     <input required type="text" name="name" id="name" {...register("name")} />
                 </label>
@@ -57,7 +53,7 @@ function Form({ method }) {
                 </label>
                 <div>
                     <button type="submit">Guardar</button>
-                    <Link to="/"><button>Cancelar</button></Link>
+                    <Link to={`/admin/${userid}`} ><button>Cancelar</button></Link>
                 </div>
             </form>
         )
