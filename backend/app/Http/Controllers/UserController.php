@@ -58,11 +58,6 @@ class UserController extends Controller
         $user = User::findOrFail($id);
         $orders = Order::where('product_id', $id)->exists();
 
-    if ($orders) {
-        return response()->json(['message' => , 422);
-        //HTTP 422 se utiliza para indicar que la solicitud del cliente es válida, pero el servidor no puede procesarla debido a un error semántico en la solicitud del cliente.
-    }
-
     $user->delete();
     return response()->json(['message' => 'The user has been successfully deleted'], 200);
     }
