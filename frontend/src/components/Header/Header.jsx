@@ -17,31 +17,29 @@ function Header(props) {
     <>
       <Container className=" w-100">
         <nav className="navbar navbar-expand-sm d-flex justify-content-between responsive">
-          <Link className="navbar-brand" to="/">
-            <img
-              src="src\assets\logo-sinfondo.png"
-              alt="logo-techrevive"
-            />
-
-
-            <span>Tech Revive</span>
+          <Link className="navbar-brand d-flex" to="/">
+            <Col>
+              <img
+                className="logo-techrevive"
+                src="src\assets\logo-sinfondo.png"
+                alt="logo-techrevive"
+              />
+            </Col>
           </Link>
 
           <Form inline>
-            <Row>
-              <Col xs="auto">
-                <InputGroup>
-                  <Form.Control
-                    type="text"
-                    placeholder="Search"
-                    className=" mr-sm-2"
-                  />
-                  <Button variant="outline-primary" id="button-addon1">
-                    <i className="bi bi-search"></i>
-                  </Button>
-                </InputGroup>
-              </Col>
-            </Row>
+            <Col xs="auto">
+              <InputGroup>
+                <Form.Control
+                  type="text"
+                  placeholder="Search"
+                  className="mr-sm-2"
+                />
+                <Button variant="outline-primary" id="button-addon1">
+                  <i className="bi bi-search"></i>
+                </Button>
+              </InputGroup>
+            </Col>
           </Form>
 
           <ul className="navbar-nav flex-row justify-content-end flex-wrap">

@@ -10,24 +10,25 @@ function Footer() {
     <>
       <footer>
         <Container>
-          <Row>
-            <Col lg={4}>
-              <h3>Contacto</h3>
-              <p>Correo electrónico: info@example.com</p>
-              <p>Teléfono: 123-456-7890</p>
-            </Col>
-            <Col lg={4}>
-              <h3>Derechos de autor</h3>
-              <p>(c) 2023 Mi Sitio Web. Todos los derechos reservados.</p>
-            </Col>
-          </Row>
-          <hr className="p-0 m-0" />
           <Row className="justify-content-center">
-            <Col lg={4} className="m-2 text-center ">
+            <Col responsive className="m-4 text-center ">
+              <img
+                src="src\assets\logo-sinfondo-blanco.png"
+                alt=""
+                width="80px"
+              />
+              <div className="my-4">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-twitch"></i>
+              </div>
+              <hr className="p-0 m-0" />
+              <div className="mt-4">
                 <span>
-                  <span>Esta página web está hecho por </span>
-                  <span>Fem Coders.</span>
+                  Esta página web está hecho por FemCoders Consultory.
                 </span>
+              </div>
             </Col>
           </Row>
         </Container>
