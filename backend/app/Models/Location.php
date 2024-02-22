@@ -12,4 +12,9 @@ class Location extends Model
     protected $fillable = [
         'location',
     ];
+
+    public function products()
+    {
+        return $this->hasMany(Product::class, 'location_id');
+    }
 }

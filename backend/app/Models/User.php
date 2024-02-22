@@ -37,4 +37,10 @@ class User extends Authenticatable
         'created_at',
         'updated_at',
     ];
+
+    public function seller()
+    {
+        return $this->hasMany(Product::class, 'seller_id');
+    }
+
 }

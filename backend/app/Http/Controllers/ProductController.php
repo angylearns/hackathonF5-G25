@@ -47,10 +47,16 @@ class ProductController extends Controller
         return $product;
     }
 
-    public function destroy (Request $request,$id){
+    public function destroy ($id){
         $product = Product::findOrFail($id);
-        $product->delete();
-        return response()->json(['message' => 'Producto eliminado correctamente'], 200);
+    $orders = Order::where('product_id', $id)->exists();
+
+    if ($orders) {
+        return response()->json(['message' => 'No se puede eliminar porque hay un pedido en curso'], 422);
+    }
+
+    $product->delete();
+    return response()->json(['message' => 'Eliminación exitosa'], 200);
     }
 
 
