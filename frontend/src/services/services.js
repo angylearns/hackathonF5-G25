@@ -1,6 +1,6 @@
-const url = 'http://localhost:3000'
+//const url = 'http://localhost:3000'
 //api en backend
-//const url = 'http://127.0.0.1:8000/api' 
+const url = 'http://127.0.0.1:8000/api' 
 
 
 // PRODUCTS
@@ -67,3 +67,6 @@ export const getUserById = async (id) => {
     const data = await response.json();
     return data;
 }
+
+//LOCATIONS
+

@@ -39,7 +39,7 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
         $product -> name = $request -> name;
         $product -> category_id = $request -> category_id;
-        $product -> price = $request -> category_id;
+        $product -> price = $request -> price;
         $product -> seller_id =  $request -> seller_id;
         $product -> location_id = $request -> location_id;
         $product -> image = $request -> image;

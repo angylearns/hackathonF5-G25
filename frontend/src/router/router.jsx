@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../views/Home";
 import Layout from "../components/Layout";
-import {getProducts, getProductById} from '../services/services'
+import {getProducts} from '../services/services'
 import ProductDetail from "../components/ProductDetail";
 import Catalog from "../components/Catalog";
 
@@ -23,7 +23,6 @@ const router = createBrowserRouter([
         {
           path: "/product/:id",  
           element: <ProductDetail/>,
-          loader: getProductById
             
         }
       ]

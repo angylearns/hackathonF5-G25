@@ -23,7 +23,7 @@ To install our app follow these steps
  
  **Install Dependencies:** 
  
-   4. Navigate to the FRONTEND folder and run the comand `npm -install`
+  4. Navigate to the FRONTEND folder and run the comand `npm -install`
   5. Navigate to the BACKEND folder and run the comand `npm -install` and `vendor update`
 
 **Configure Environment Variables:**
@@ -41,6 +41,8 @@ To install our app follow these steps
 `php artisan db:seed --class=DatabaseSeeder`
 
  This command will create the necessary database tables based on the migration files provided in the `database/migrations` directory.
+
+Or else there is a file in the path backenddatabase `tech_riveve_bd.sq` that you can run on your database and it will generate a DB 
  
 9.  **Start the servers:** Once everything is configured, you need to start several servers 
 a. Apache and Mysql server from xampp

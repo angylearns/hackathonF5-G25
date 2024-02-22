@@ -11,10 +11,12 @@
 .navbar .nav-item a {
   color: black;
 }
-
 .navbar-brand .nav-logo {
   color: var(--main-brand-color);
   font-size: 1.8rem;
+}
+.navbar-brand img{
+  width: 20%;
 }
 
 .bi-person-circle{
