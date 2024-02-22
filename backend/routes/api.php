@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -25,5 +26,13 @@ Route::controller(ProductController::class)->group(function() {
     Route::get('/products/{id}',  'show' );
     Route::put('/products/{id}',  'update' );
     Route::delete('/products/{id}',  'destroy' );
+});
+
+Route::controller(UserController::class)->group(function() {
+    Route::get('/users',  'index' );
+    Route::post('/users',  'store' );
+    Route::get('/users/{id}',  'show' );
+    Route::put('/users/{id}',  'update' );
+    Route::put('/users/cancel/{id}',  'destroy' );
 });
 
