@@ -33,7 +33,7 @@ function Form({ method }) {
                 </label>
                 <label htmlFor="price">
                     Precio:
-                    <input required type="number" name="price" id="price" {...register("price")} />
+                    <input required type="number" step="any" name="price" id="price" {...register("price")} />
                 </label>
                 <label htmlFor="seller">
                     Vendedor:

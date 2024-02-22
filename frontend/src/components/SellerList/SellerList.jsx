@@ -4,8 +4,7 @@ import { deleteProduct } from "../../services/services";
 
 const SellerList = () => {
     const userid = useParams().userid;
-
-    const products = useLoaderData();
+    let products = useLoaderData();
     const navigate = useNavigate();
 
     return (
