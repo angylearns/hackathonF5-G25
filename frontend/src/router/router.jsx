@@ -1,7 +1,7 @@
-import { Outlet, createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Home from "../views/Home";
 import Layout from "../components/Layout";
-import {getProducts, getProductById} from '../services/services'
+import { getProducts, getProductById } from '../services/services'
 import ProductDetail from "../components/ProductDetail";
 import Form from "../components/Form/Form";
 import Admin from "../views/Admin";
@@ -16,16 +16,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
         loader: getProducts,
-        children: [
-          {
-            path: "/:category",
-          },
-          {
-            path: "/product/:id",
-            element: <ProductDetail />,
-            loader: getProductById
-          }
-        ]
+      },
+      {
+        path: "/product/:id",
+        element: <ProductDetail />,
       },
       {
         path: "/admin/",
@@ -43,7 +37,7 @@ const router = createBrowserRouter([
           {
             path: "/admin/:userid/product/:id",
             element: <ProductDetail />,
-            },
+          },
           {
             path: "/admin/:userid/add/product/",
             element: <Form method="post" />
@@ -56,7 +50,7 @@ const router = createBrowserRouter([
       }
     ]
 
-  } /* add routes here */,
+  }
 ],
 );
 export default router;
