@@ -1,11 +1,18 @@
-import { useParams } from "react-router-dom";
+import { Link, Navigate, useParams } from "react-router-dom";
 import { useForm } from 'react-hook-form';
 import { createProduct, getProductById, updateProduct } from "../../services/services";
 import "./Form.css"
+import { useState } from "react";
 
 function Form({ method }) {
     const { register, handleSubmit, setValue } = useForm();
     const id = useParams().id;
+    const [goToHome, setGoToHome] = useState(false);
+
+    if (goToHome) {
+      return <Navigate to="/" />
+    }
+  
     if (method === "put") {
     
         getProductById(id).then(product => {
@@ -20,30 +27,29 @@ function Form({ method }) {
     };
 
     return (
-
-            <form onSubmit={handleSubmit(data => { method === "post" ? createProduct(data) : updateProduct(id, data);  })}>
+            <form onSubmit={handleSubmit(data => { method === "post" ? createProduct(data).then(()=>setGoToHome(true)) : updateProduct(id, data).then(()=>setGoToHome(true))})}>
                 <label htmlFor="name">Nombre:
-                    <input type="text" name="name" id="name" {...register("name")} />
+                    <input required type="text" name="name" id="name" {...register("name")} />
                 </label>
                 <label htmlFor="category">
                     Categoría:
-                    <input type="number" name="category_id" id="category" {...register("category_id")} />
+                    <input required type="number" name="category_id" id="category" {...register("category_id")} />
                 </label>
                 <label htmlFor="price">
                     Precio:
-                    <input type="number" name="price" id="price" {...register("price")} />
+                    <input required type="number" name="price" id="price" {...register("price")} />
                 </label>
                 <label htmlFor="seller">
                     Vendedor:
-                    <input type="number" name="seller_id" id="seller" {...register("seller_id")} />
+                    <input required type="number" name="seller_id" id="seller" {...register("seller_id")} />
                 </label>
                 <label htmlFor="location">
                     Localización:
-                    <input type="number" name="location_id" id="location" {...register("location_id")} />
+                    <input required type="number" name="location_id" id="location" {...register("location_id")} />
                 </label>
                 <label htmlFor="image">
                     Imagen:
-                    <input type="text" name="image" id="image" {...register("image")} />
+                    <input required type="text" name="image" id="image" {...register("image")} />
                 </label>
                 <label htmlFor="description">
                     Descripción:
@@ -51,12 +57,10 @@ function Form({ method }) {
                 </label>
                 <div>
                     <button type="submit">Guardar</button>
-                    <button>Cancelar</button>
+                    <Link to="/"><button>Cancelar</button></Link>
                 </div>
             </form>
         )
-
-
     }
 
     export default Form;

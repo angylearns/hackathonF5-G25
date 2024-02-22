@@ -1,11 +1,11 @@
 import Card from "./Card";
 import "./Catalog.css";
 
-const Catalog = ({ products }) => {
+const Catalog = ({ products, user }) => {
     return (
         <section>
         {products.map(product => (
-            <Card key={product.id} product={product} />
+            <Card user={user} key={product.id} product={product} />
         ))}
         </section>
     )

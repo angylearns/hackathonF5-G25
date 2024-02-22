@@ -59,46 +59,6 @@
       "description": "Detalles de la Tableta",
       "created_at": "2022-02-02 12:12:12",
       "updated_at": "2022-02-02 12:12:12"
-    },
-    {
-      "id": "3673",
-      "name": "",
-      "category_id": "",
-      "price": "",
-      "seller_id": "",
-      "location_id": "",
-      "image": "",
-      "description": ""
-    },
-    {
-      "id": "8995",
-      "name": "",
-      "category_id": "",
-      "price": "",
-      "seller_id": "",
-      "location_id": "",
-      "image": "",
-      "description": ""
-    },
-    {
-      "id": "41ab",
-      "name": "",
-      "category_id": "",
-      "price": "",
-      "seller_id": "",
-      "location_id": "",
-      "image": "",
-      "description": ""
-    },
-    {
-      "id": "bfb6",
-      "name": "",
-      "category_id": "",
-      "price": "",
-      "seller_id": "",
-      "location_id": "",
-      "image": "",
-      "description": ""
     }
   ],
   "users": [
