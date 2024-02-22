@@ -8,15 +8,18 @@
   color: var(--main-brand-color);
   font-size: 1.8rem;
 }
+.navbar-brand img{
+  width: 20%;
+}
 
 .primary{
-  --bs-primary;
+ --bs-primary;
 }
 
 
 /* Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) {
+@media (min-width: 576px) {
   .navbar {
     justify-content: space-between;
   }
-} */
+}
