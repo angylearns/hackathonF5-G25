@@ -1,15 +1,19 @@
 import React from "react";
 import "./Footer.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { InputGroup, Row, Col, Button } from "react-bootstrap";
-import Container from "react-bootstrap/Container";
+/* import "bootstrap/dist/css/bootstrap.min.css"; */
+/* import { InputGroup, Row, Col, Button } from "react-bootstrap";
+import Container from "react-bootstrap/Container"; */
 
 
 function Footer() {
   return (
     <>
       <footer>
-        <Container>
+        {/* <img  className="image-footer" src="../src\assets\images\image-footer.png" alt="logo de la empresa" />
+        <h4>TECH SPACE</h4>
+        <p>TECHNOLOGY</p>
+        <div></div> */}
+        {/* <Container>
           <Row>
             <Col lg={4}>
               <h3>Contacto</h3>
@@ -30,7 +34,7 @@ function Footer() {
                 </span>
             </Col>
           </Row>
-        </Container>
+        </Container> */}
       </footer>
     </>
   );

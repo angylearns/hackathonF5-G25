@@ -19,7 +19,7 @@ function Header(props) {
         <nav className="navbar navbar-expand-sm d-flex justify-content-between responsive">
           <Link className="navbar-brand" to="/">
             <img
-              src="src\assets\logo-sinfondo.png"
+              src="../src\assets\logo-sinfondo.png"
               alt="logo-techrevive"
             />
 

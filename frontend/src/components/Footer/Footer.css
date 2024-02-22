@@ -1,7 +1,11 @@
 footer{
-  background-color: grey;
+  background-color: #243A73;
+
 }
-.main-footer span{
+.image-footer{
+  padding: 40px; 
+}
+/* .main-footer span{
   color: black;
 }
 .main-footer .author:hover{
@@ -30,4 +34,4 @@ footer{
 .main-footer aside > span {
   padding-right: 0.3rem;
 }
-
+ */
