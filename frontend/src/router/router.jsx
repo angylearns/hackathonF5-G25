@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import {getProducts, getProductById} from '../services/services'
 import ProductDetail from "../components/ProductDetail";
 import Catalog from "../components/Catalog";
+import Form from "../components/Form/Form";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +26,14 @@ const router = createBrowserRouter([
           element: <ProductDetail/>,
           loader: getProductById
             
+        },
+        {
+          path: "/add/product/",  
+          element: <Form method="post"/>,  
+        },
+        {
+          path: "/edit/product/:id",  
+          element: <Form method="put"/>,  
         }
       ]
 

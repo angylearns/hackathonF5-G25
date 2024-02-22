@@ -42,6 +42,7 @@ export const createProduct = async (newProduct) => {
 // Petición PUT
 
 export const updateProduct = async (id, modified) => {
+    console.log("modificando");
     const response = await fetch(`${url}/products/${id}`, {
         method: "PUT",
         headers: { "Content-type": "application/json" },

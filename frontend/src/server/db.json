@@ -1,83 +1,121 @@
 {
-    "products": [
-        {
-            "id": "1",
-            "name": "Tablet 10",
-            "category_id": 2,
-            "price": "100",
-            "seller_id": 1,
-            "location_id": 4,
-            "image": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202309/20/00194612201072____12__640x640.jpg",
-            "description": "Detalles de la Tableta",
-            "created_at": "2022-02-02 12:12:12",
-            "updated_at": "2022-02-02 12:12:12"            
-        },
-        {
-            "id": "2",
-            "name": "Tablet 12",
-            "category_id": 2,
-            "price": "100",
-            "seller_id": 1,
-            "location_id": 4,
-            "image": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202309/20/00194612201072____12__640x640.jpg",
-            "description": "Detalles de la Tableta",
-            "created_at": "2022-02-02 12:12:12",
-            "updated_at": "2022-02-02 12:12:12"            
-        },
-        {
-            "id": "3",
-            "name": "Tablet 13",
-            "category_id": 2,
-            "price": "100",
-            "seller_id": 1,
-            "location_id": 4,
-            "image": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202309/20/00194612201072____12__640x640.jpg",
-            "description": "Detalles de la Tableta",
-            "created_at": "2022-02-02 12:12:12",
-            "updated_at": "2022-02-02 12:12:12"            
-        }
-        ,
-        {
-            "id": "4",
-            "name": "Tablet 14",
-            "category_id": 2,
-            "price": "100",
-            "seller_id": 1,
-            "location_id": 4,
-            "image": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202309/20/00194612201072____12__640x640.jpg",
-            "description": "Detalles de la Tableta",
-            "created_at": "2022-02-02 12:12:12",
-            "updated_at": "2022-02-02 12:12:12"            
-        },
-        {
-            "id": "5",
-            "name": "Tablet 15",
-            "category_id": 2,
-            "price": "100",
-            "seller_id": 1,
-            "location_id": 4,
-            "image": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202309/20/00194612201072____12__640x640.jpg",
-            "description": "Detalles de la Tableta",
-            "created_at": "2022-02-02 12:12:12",
-            "updated_at": "2022-02-02 12:12:12"            
-        }
-    ],
-    "users": [
-        {
-            "id": "1",
-            "username": "seh_paco_guapo",
-            "seller": 1,
-            "email": "paco@paco.com",
-            "password": "1234",
-            "address": "Calle Mía, 22",
-            "location_id": 3,
-            "first_name": "Francisco",
-            "last_name": "González",
-            "zip_code": "28001",
-            "mobile": "123456789",
-            "created_at": "2022-02-02 12:12:12",
-            "updated_at": "2022-02-02 12:12:12"
-           
-        }
-    ]
+  "products": [
+    {
+      "id": "1",
+      "name": "Tablet 10",
+      "category_id": 2,
+      "price": "100",
+      "seller_id": 1,
+      "location_id": 4,
+      "image": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202309/20/00194612201072____12__640x640.jpg",
+      "description": "Detalles de la Tableta",
+      "created_at": "2022-02-02 12:12:12",
+      "updated_at": "2022-02-02 12:12:12"
+    },
+    {
+      "id": "2",
+      "name": "Tablet 12",
+      "category_id": 2,
+      "price": "100",
+      "seller_id": 1,
+      "location_id": 4,
+      "image": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202309/20/00194612201072____12__640x640.jpg",
+      "description": "Detalles de la Tableta",
+      "created_at": "2022-02-02 12:12:12",
+      "updated_at": "2022-02-02 12:12:12"
+    },
+    {
+      "id": "3",
+      "name": "Tablet 13",
+      "category_id": 2,
+      "price": "100",
+      "seller_id": 1,
+      "location_id": 4,
+      "image": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202309/20/00194612201072____12__640x640.jpg",
+      "description": "Detalles de la Tableta",
+      "created_at": "2022-02-02 12:12:12",
+      "updated_at": "2022-02-02 12:12:12"
+    },
+    {
+      "id": "4",
+      "name": "Tablet 14",
+      "category_id": 2,
+      "price": "100",
+      "seller_id": 1,
+      "location_id": 4,
+      "image": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202309/20/00194612201072____12__640x640.jpg",
+      "description": "Detalles de la Tableta",
+      "created_at": "2022-02-02 12:12:12",
+      "updated_at": "2022-02-02 12:12:12"
+    },
+    {
+      "id": "5",
+      "name": "Tablet 15",
+      "category_id": 2,
+      "price": "100",
+      "seller_id": 1,
+      "location_id": 4,
+      "image": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202309/20/00194612201072____12__640x640.jpg",
+      "description": "Detalles de la Tableta",
+      "created_at": "2022-02-02 12:12:12",
+      "updated_at": "2022-02-02 12:12:12"
+    },
+    {
+      "id": "3673",
+      "name": "",
+      "category_id": "",
+      "price": "",
+      "seller_id": "",
+      "location_id": "",
+      "image": "",
+      "description": ""
+    },
+    {
+      "id": "8995",
+      "name": "",
+      "category_id": "",
+      "price": "",
+      "seller_id": "",
+      "location_id": "",
+      "image": "",
+      "description": ""
+    },
+    {
+      "id": "41ab",
+      "name": "",
+      "category_id": "",
+      "price": "",
+      "seller_id": "",
+      "location_id": "",
+      "image": "",
+      "description": ""
+    },
+    {
+      "id": "bfb6",
+      "name": "",
+      "category_id": "",
+      "price": "",
+      "seller_id": "",
+      "location_id": "",
+      "image": "",
+      "description": ""
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "seh_paco_guapo",
+      "seller": 1,
+      "email": "paco@paco.com",
+      "password": "1234",
+      "address": "Calle Mía, 22",
+      "location_id": 3,
+      "first_name": "Francisco",
+      "last_name": "González",
+      "zip_code": "28001",
+      "mobile": "123456789",
+      "created_at": "2022-02-02 12:12:12",
+      "updated_at": "2022-02-02 12:12:12"
+    }
+  ]
 }
