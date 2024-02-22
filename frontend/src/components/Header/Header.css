@@ -1,0 +1,26 @@
+.navbar {
+  justify-content: center;
+}
+
+
+
+.navbar .nav-item a {
+  color: black;
+}
+
+.navbar-brand .nav-logo {
+  color: var(--main-brand-color);
+  font-size: 1.8rem;
+}
+
+.primary{
+  --bs-primary;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .navbar {
+    justify-content: space-between;
+  }
+}
