@@ -3,11 +3,20 @@ import "./Catalog.css";
 
 const Catalog = ({ products }) => {
     return (
-        <section>
-        {products.map(product => (
+    <>
+            <section className="section-catalog">
+                <h2 className="subtittle-catalog">Todos los productos</h2>
+            
+            <div className="catalog-products">
+                {products.map(product => (
             <Card key={product.id} product={product} />
-        ))}
-        </section>
+            ))} 
+            </div>
+            </section>
+            
+    
+    </>
+        
     )
 
 }
