@@ -10,6 +10,7 @@ use App\Models\Category;
 use App\Models\Location;
 use App\Models\Order;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Http\Response;
 
 class UserController extends Controller
 {
@@ -55,13 +56,14 @@ class UserController extends Controller
     }
 
     public function destroy ($id){
-        $user = User::findOrFail($id);
-        $orders = Order::where('product_id', $id)->exists();
-
-    $user->delete();
-    return response()->json(['message' => 'The user has been successfully deleted'], 200);
+        try {
+            $user = User::findOrFail($id);
+            $user->delete();
+            
+            return response()->json(['message' => 'The user has been successfully deleted'], Response::HTTP_OK);
+        } catch (\Exception $e) {
+            return response()->json(['message' => 'An error occurred while deleting the user'], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
-
-
         
     }
