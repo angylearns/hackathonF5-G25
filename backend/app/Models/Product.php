@@ -41,4 +41,9 @@ class Product extends Model
         return $this->belongsTo(Location::class, 'location_id');
     }
 
+    public function orders()
+    {
+        return $this->hasMany(Order::class, 'product_id');
+    }
+
 }

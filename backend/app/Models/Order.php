@@ -25,14 +25,13 @@ class Order extends Model
         'updated_at',
     ];
 
-    public function users()
+    public function buyer(): BelongsTo
     {
-        // return $this->belongsTo(Cliente::class, 'id_cliente');
+        return $this->belongsTo(User::class, 'buyer_id');
     }
 
-
-    public function products()
+    public function product(): BelongsTo
     {
-        // return $this->belongsToMany(Libro::class, 'id_libro');
+        return $this->belongsTo(Product::class, 'product_id');
     }
 };
