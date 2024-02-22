@@ -17,7 +17,7 @@ class Product extends Model
         'seller_id',
         'location_id',
         'image',
-        'descrption',
+        'description',
     ];
 
     protected $dates = [

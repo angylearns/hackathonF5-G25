@@ -18,10 +18,11 @@ class OrderFactory extends Factory
     public function definition(): array
     {
         return [
-        'id_buyer' =>\App\Models\User::pluck('id')->random(),
-        'location_id'=> \App\Models\location::pluck('id')->random(),
-        'final_price' => fake()-> randomFloat($nbMaxDecimals = 2, $min = 1, $max = 6000),
-        'close_day' =>fake()-> DateTime(),
+        'buyer_id' => \App\Models\User::pluck('id')->random(),
+        'product_id' => \App\Models\Product::pluck('id')->random(), 
+        'location_id' => \App\Models\Location::pluck('id')->random(),
+        'final_price' => fake()->randomFloat($nbMaxDecimals = 2, $min = 1, $max = 6000),
+        'close_day' => fake()->dateTime(),
         ];
     }
 }

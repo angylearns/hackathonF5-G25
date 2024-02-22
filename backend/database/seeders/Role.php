@@ -12,11 +12,9 @@ class Role extends Seeder
     // public function run(): void
     // {
     //     DB::table('locations')->insert([
-    //         [
     //             ['rol' => 'administrator'],
     //             ['rol' => 'buyer'],
     //             ['rol' => 'seller']
-    //         ]
     //     ]);
     // }
 }

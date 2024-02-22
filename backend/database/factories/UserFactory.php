@@ -25,14 +25,15 @@ class UserFactory extends Factory
     {
         return [
             'username' => fake()->userName(),
-            'seller' => fake() -> boolean(),
-            'first_name' => fake()->firstName(),
-            'last_name' => fake()->lastName(),
             'email' => fake()->unique()->safeEmail(),
             'password' => static::$password ??= Hash::make('password'),
-            'location_id'=>\App\Models\Location::pluck('id')->random(),
+            'seller' => fake() -> boolean(),
+            'address' => fake() -> address(),
+            'location_id'=> \App\Models\Location::pluck('id')->random(),
+            'first_name' => fake()->firstName(),
+            'last_name' => fake()->lastName(),
             'zip_code' => fake()-> postcode(),
-            'mobile' => fake() -> phoneNumber(),
+            'mobile' => fake()->unique()->e164PhoneNumber()
         ];
     }
 

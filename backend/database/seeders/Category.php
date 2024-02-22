@@ -10,8 +10,7 @@ class Category extends Seeder
 {
     public function run(): void
     {
-        DB::table('locations')->insert([
-         [
+        DB::table('categories')->insert([
             ['category' => 'computers'],
             ['category' => 'phones'],
             ['category' => 'components'],
@@ -40,7 +39,6 @@ class Category extends Seeder
             ['category' => 'projectors'],
             ['category' => 'speakers'],
             ['category' => 'accessories'],
-        ]
      ]);
     }
 }

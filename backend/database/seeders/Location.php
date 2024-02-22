@@ -11,7 +11,7 @@ class Location extends Seeder
     public function run()
     {
         DB::table('locations')->insert([
-            [
+            
                 ['location' => 'Alava'],
                 ['location' => 'Albacete'],
                 ['location' => 'Alicante'],
@@ -62,7 +62,7 @@ class Location extends Seeder
                 ['location' => 'Vizcaya (Bizkaia)'],
                 ['location' => 'Zamora'],
                 ['location' => 'Zaragoza']
-            ]
+            
           
         ]);
     }

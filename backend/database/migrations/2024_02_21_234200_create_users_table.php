@@ -23,7 +23,8 @@ return new class extends Migration
             $table->foreign('location_id')->references('id')->on('locations');
             $table->string('first_name');
             $table->string('last_name');
-            $table->string('zip_code', 5); 
+            $table->string('zip_code'); 
+            $table->string('mobile');
             $table->rememberToken();
             $table->timestamps();
         });

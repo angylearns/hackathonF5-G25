@@ -23,7 +23,7 @@ class ProductFactory extends Factory
             'seller_id' => \App\Models\User::pluck('id')->random(),
             'location_id'=> \App\Models\location::pluck('id')->random(),
             'image'=> fake()-> url(),
-            'descrption'=> fake()->sentence(250),
+            'description'=> fake()->sentence(3),
         ];
     }
 }
