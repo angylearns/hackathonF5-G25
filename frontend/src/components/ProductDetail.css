@@ -1,4 +1,27 @@
 .container-product-id{
-    display: flex;
+    display: grid;
+    grid-row: auto;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    padding: 5%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.product-info-image img{
+    width: 100%;
+}
+.product-tittle{
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.product-info-text{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }

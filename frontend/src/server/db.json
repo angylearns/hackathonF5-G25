@@ -2,9 +2,9 @@
     "products": [
         {
             "id": "1",
-            "name": "Tablet 10",
+            "name": "Iphone 15 rosa",
             "category_id": 2,
-            "price": "100",
+            "price": "100 $",
             "seller_id": 1,
             "location_id": 4,
             "image": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202309/20/00194612201072____12__640x640.jpg",
@@ -14,13 +14,13 @@
         },
         {
             "id": "2",
-            "name": "Tablet 12",
+            "name": "iPad Pro 12.9 (2015) 1.a generación 128 Go - WiFi + 4G - Gris Espacial",
             "category_id": 2,
             "price": "100",
             "seller_id": 1,
             "location_id": 4,
-            "image": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202309/20/00194612201072____12__640x640.jpg",
-            "description": "Detalles de la Tableta",
+            "image": "https://www.backmarket.es/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D640/https://d2e6ccujb3mkqf.cloudfront.net/16b51eee-04dd-4fa2-b241-d4e20b77d796-1_5861872a-e045-46ae-96ce-6ce89f6ead77.jpg",
+            "description": "El iPad Pro 12.9 de primera generación, con capacidad de almacenamiento de 128 GB y conectividad WiFi + 4G, en elegante gris espacial, marca un hito en la evolución de las tabletas. Con su pantalla Retina de 12.9 pulgadas, ofrece una experiencia visual inigualable, ideal para la creatividad y la productividad. Potenciado por un rendimiento excepcional gracias a su chip A9X, este dispositivo es perfecto para multitareas exigentes y aplicaciones de alta demanda. Además, su diseño delgado y ligero, combinado con su conectividad 4G, lo convierten en el compañero ideal tanto en casa como en movimiento.",
             "created_at": "2022-02-02 12:12:12",
             "updated_at": "2022-02-02 12:12:12"            
         },

@@ -22,15 +22,17 @@ const ProductDetail = () => {
 
   return (
     <>
+    <h1 className='product-tittle'>{product.name}</h1>
         <div className='container-product-id'>
-            <div>
-                <h1>{product.name}</h1>
+            
+            <div className='product-info-image'>
+                
                 <img src={product.image} alt={product.name} />
                 
             </div>
           
         
-            <div>
+            <div  className="product-info-text">
                 <p>{product.location_id}</p>
                 <p>Price: {product.price}</p>
                 <p>{product.description}</p>

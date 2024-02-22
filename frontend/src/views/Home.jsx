@@ -1,6 +1,6 @@
 import React from 'react'
 import {useLoaderData} from 'react-router-dom'
-import Card from '../components/Card';
+import Catalog from '../components/Catalog';
 
 const Home = () => {
   const products = useLoaderData();
@@ -8,11 +8,10 @@ const Home = () => {
     <>
     <h1>TechRevive</h1>
     <section>
-      <Card products={products}/>
+      <Catalog products={products}/>
     </section>
     </>
-    
-  )
+  );
 }
 
-export default Home
+export default Home;

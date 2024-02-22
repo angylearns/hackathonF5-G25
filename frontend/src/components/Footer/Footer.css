@@ -1,0 +1,33 @@
+footer{
+  background-color: grey;
+}
+.main-footer span{
+  color: black;
+}
+.main-footer .author:hover{
+  color: fuchsia;
+}
+
+.main-footer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background-color: grey;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 7rem;
+}
+
+.main-footer aside {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 0 3rem;
+}
+
+.main-footer aside > span {
+  padding-right: 0.3rem;
+}
+

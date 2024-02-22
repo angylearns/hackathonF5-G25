@@ -1,30 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Card = ({products}) => {
+const Card = ({ product }) => {
   return (
     <>
-    {
-        products.map(product =>{
-            return(
-               <div key={product.id}>
-                <img src={product.image} alt={product.name} />
-                <h2>{product.name}</h2>
-                <p>{product.description}</p>
-                <p>Price: {product.price}</p>
-               </div> 
-            )
-        })
-        
-        
-
-
-
-    }
-    
-    
+      <img src={product.image} alt={product.name} />
+      <h2>{product.name}</h2>
+      <p>Price: {product.price}</p>
+      <p>{product.description}</p>
+      <Link to={`/product/${product.id}`}><button>Detalles</button></Link>
+      <button>Comprar</button>
     </>
-
-    
   )
 }
 
