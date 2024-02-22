@@ -10,6 +10,7 @@ const SellerList = () => {
     return (
         <>
             <h1>Mis productos</h1>
+            <button onClick={()=>navigate(`/admin/${userid}/add/product/`)}>Agregar Producto</button>
             <section>
                 {products.map(product => product.seller_id == userid && (
                     <article>
