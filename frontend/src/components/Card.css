@@ -1,0 +1,26 @@
+.card-product{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 5px;
+    margin-top: 70px;
+    width: 30%;
+}
+.card-product img {
+    width: 100%;
+}
+.button-card{
+    width: 100px;
+    border-radius: 10px;
+    background-color: #0077E5;
+    padding: 5px;
+}
+.buttons-info{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}

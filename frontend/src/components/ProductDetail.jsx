@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import {useParams} from 'react-router-dom'
 import {getProductById} from '../services/services'
+import { getUser } from '../services/services';
 import './ProductDetail.css'
 
 const ProductDetail = () => {
   const {id} = useParams();
   const [product, setProduct] = useState(null);
+  const [seller, setSeller] = useState();
 
   useEffect(() => {
     const productId = async () => {
@@ -22,7 +24,7 @@ const ProductDetail = () => {
 
   return (
     <>
-    <h1 className='product-tittle'>{product.name}</h1>
+    
         <div className='container-product-id'>
             
             <div className='product-info-image'>
@@ -33,9 +35,20 @@ const ProductDetail = () => {
           
         
             <div  className="product-info-text">
+              <h3 className='product-tittle'>{product.name}</h3>
                 <p>{product.location_id}</p>
-                <p>Price: {product.price}</p>
                 <p>{product.description}</p>
+                <p>Price: {product.price}</p>
+                <div>
+                  <button className='button-card' onClick={() => getUser(product.seller_id).then(seller => setSeller(seller))}>Comprar</button>
+                </div>
+                {seller && (<p>
+                    Datos del Vendedor:
+                    <ul>
+                      <li>Teléfono: {seller.mobile}</li>
+                      <li>Email: {seller.email}</li>
+                    </ul>
+                </p>)}
             </div>
         </div>
     </>
