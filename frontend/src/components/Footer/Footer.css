@@ -1,8 +1,7 @@
 footer{
-  background-color: grey;
-}
-.main-footer span{
-  color: black;
+  background-image: url('../../assets/bg-footer.png');
+  background-size: cover;
+  color: white;
 }
 .main-footer .author:hover{
   color: fuchsia;
@@ -31,3 +30,8 @@ footer{
   padding-right: 0.3rem;
 }
 
+footer .bi{
+  padding-inline: 10px;
+  color: white;
+  font-size: 20px;
+}
