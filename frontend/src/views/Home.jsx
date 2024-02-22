@@ -7,7 +7,7 @@ const Home = () => {
   const products = useLoaderData();
   return (
     <>
-    <h1>TechRevive</h1>
+    {/* <h1 className='Tittle-home'>TechRevive</h1> */}
       <Catalog products={products}/>
     </>
   );
