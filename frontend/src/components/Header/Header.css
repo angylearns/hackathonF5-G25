@@ -2,9 +2,9 @@
   justify-content: center;
 }
 
-.logo-techrevive{
-  height: 60px;
-  width: auto;
+.logo-techrevive img{
+  width: 100%;
+  padding: 20px;
 }
 
 

@@ -17,14 +17,14 @@ function Header(props) {
     <>
       <Container className=" w-100">
         <nav className="navbar navbar-expand-sm d-flex justify-content-between responsive">
-          <Link className="navbar-brand d-flex" to="/">
-            <Col>
-              <img
+          <a href="../index.html"><img
                 className="logo-techrevive"
-                src="src\assets\logo-sinfondo.png"
+                src="../src\assets\images\Background.svg"
                 alt="logo-techrevive"
-              />
-            </Col>
+              /></a><Link className="navbar-brand d-flex" to="/">
+           {/*  <Col> */}
+              
+            {/* </Col> */}
           </Link>
 
           <Form inline>
