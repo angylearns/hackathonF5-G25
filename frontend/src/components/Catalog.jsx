@@ -1,7 +1,7 @@
 import Card from "./Card";
 import "./Catalog.css";
 
-const Catalog = ({ products }) => {
+const Catalog = ({ products, user }) => {
     return (
     <>
             <section className="section-catalog">
@@ -9,7 +9,7 @@ const Catalog = ({ products }) => {
             
             <div className="catalog-products">
                 {products.map(product => (
-            <Card key={product.id} product={product} />
+            <Card user={user} key={product.id} product={product} />
             ))} 
             </div>
             </section>

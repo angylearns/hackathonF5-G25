@@ -47,8 +47,8 @@ function Header(props) {
           <ul className="navbar-nav flex-row justify-content-end flex-wrap">
             {!isUserLogged() ? (
               <li className="nav-item">
-                <Link to="/sign-in">
-                  <Button className="primary">SIGN-IN</Button>
+                <Link to="/admin">
+                  <Button className="primary">Admin</Button>
                 </Link>
               </li>
             ) : (
