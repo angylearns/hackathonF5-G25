@@ -7,9 +7,8 @@ import "./Layout.css"
 const Layout = () => {
   return (
     <>
-    <Header />
+      <Header />
       <Outlet />
-      <h1>Soy un Body, estoy en Layout</h1>
     <Footer />
     </>
   )

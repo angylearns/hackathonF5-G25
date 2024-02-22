@@ -12,26 +12,6 @@ function Footer() {
         <Container>
           <Row>
             <Col lg={4}>
-              <h3>Categorías</h3>
-              <ul>
-                <li>
-                  <a href="#">Móviles</a>
-                </li>
-                <li>
-                  <a href="#">Tablets</a>
-                </li>
-                <li>
-                  <a href="#">Portátiles</a>
-                </li>
-                <li>
-                  <a href="#">Ordenadores Sobre Mesa</a>
-                </li>
-                <li>
-                  <a href="#">Otros</a>
-                </li>
-              </ul>
-            </Col>
-            <Col lg={4}>
               <h3>Contacto</h3>
               <p>Correo electrónico: info@example.com</p>
               <p>Teléfono: 123-456-7890</p>

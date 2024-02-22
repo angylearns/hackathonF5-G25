@@ -13,13 +13,17 @@ function Header(props) {
     return isLogged;
   };
 
-
   return (
     <>
       <Container className=" w-100">
         <nav className="navbar navbar-expand-sm d-flex justify-content-between responsive">
           <Link className="navbar-brand" to="/">
-            <img src="" alt="logo-techrevive" />
+            <img
+              src=""
+              alt="logo-techrevive"
+            />
+
+
             <span>Tech Revive</span>
           </Link>
 
